@@ -11,7 +11,8 @@ const calculateReadingEase = (text) => {
   const numWords = words.length;
   const numSyllables = words.reduce((acc, word) => acc + countSyllables(word), 0);
  
-  const readingEase = 206.835 - 1.015 * (numWords / numSentences) - 84.6 * (numSyllables / numWords);
+  let readingEase = 206.835 - 1.015 * (numWords / numSentences) - 84.6 * (numSyllables / numWords);
+  readingEase = Math.round(readingEase * 100) / 100;
   return readingEase;
 }
 
@@ -28,8 +29,6 @@ const getReadingEaseDescription = (readingEase) => {
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   if (request.action === 'button_clicked') {
     const innerText = document.body.innerText;
-    console.log('Button was clicked in content script');
-    console.log('innerText:', innerText);
     const score = calculateReadingEase(innerText);
     const description = getReadingEaseDescription(score);
     sendResponse({ score, description });

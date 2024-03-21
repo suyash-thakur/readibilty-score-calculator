@@ -4,12 +4,59 @@
     <title>Readability Score</title>
 </head>
 <body>
-    <div id="score">Score: <span id="readabilityScore">Calculating...</span></div>
-    <div id="grade">Grade: <span id="gradeLevel">Calculating...</span></div>
-    <div id="description">Difficulty: <span id="description">Calculating...</span> </div>
+    <div>
+        <img src="icon.png" alt="Readability Score" width="50px">
+    </div>
+    <h2>Readability Score</h2>
+    <div id="score">Score: <span id="readabilityScore">Nil</span></div>
+    <div id="dificulty">Difficulty: <span id="description">Nil</span> </div>
     <div>
         <button id="calculate">Calculate</button>
     </div>
+    <div id="sentenceContainer">
+        Difficult Sentences -:
+        <ul id="difficultSentences">
+        </ul>
+    </div>
     <script src="popup.js"></script>
 </body>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #f0f0f0;
+        min-width: 200px;
+    }
+
+    div {
+        margin-bottom: 10px;
+    }
+
+    #calculate {
+        background-color: #4CAF50;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border: none;
+    }
+
+    #score {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    #dificulty {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    #sentenceContainer {
+        display: none;
+    }
+</style>
 </html>
