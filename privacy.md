@@ -18,10 +18,8 @@ Since we do not collect any user data, there is no information to share with thi
 ## User Controls and Rights:
 
 Users have full control over their browsing experience and can choose to enable or disable the Extension at any time through their browser settings.
-Children's Privacy:
 
-The Extension is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13.
-Changes to this Privacy Policy:
+## Changes to this Privacy Policy:
 
 We may update this Privacy Policy from time to time. Any changes will be reflected in an updated version of this Privacy Policy with a new effective date. We encourage users to review this Privacy Policy periodically for any updates.
 
