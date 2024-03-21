@@ -2,8 +2,8 @@
   "manifest_version": 3,
   "name": "Readability Score Calculator",
   "version": "1.0",
-  "description": "Calculates the Flesch-Kincaid readability score for web pages.",
-  "permissions": ["activeTab", "scripting", "tabs", "storage"],
+  "description": "Calculates the Flesch Reading Ease score of a webpage.",
+  "permissions": ["activeTab", "scripting"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
