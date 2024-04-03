@@ -3,7 +3,7 @@
   "name": "Readability Score Calculator",
   "version": "1.0",
   "description": "Calculates the Flesch Reading Ease score of a webpage.",
-  "permissions": ["activeTab", "scripting"],
+  "permissions": ["activeTab"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
